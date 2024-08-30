@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="645.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxwalaproject.Controller">
+   <children>
+      <Label layoutX="377.0" layoutY="14.0" prefHeight="26.0" prefWidth="75.0" text="Section" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="vBioCheck" layoutX="321.0" layoutY="60.0" mnemonicParsing="false" text="Biology">
+         <toggleGroup>
+            <ToggleGroup fx:id="vSectionCheck" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="vCompCheck" layoutX="410.0" layoutY="60.0" mnemonicParsing="false" text="Computer" toggleGroup="$vSectionCheck" />
+      <RadioButton fx:id="vMedCheck" layoutX="321.0" layoutY="88.0" mnemonicParsing="false" text="Pre-Med" toggleGroup="$vSectionCheck" />
+      <RadioButton fx:id="vEngCheck" layoutX="410.0" layoutY="87.0" mnemonicParsing="false" text="Pre-Eng" toggleGroup="$vSectionCheck" />
+      <RadioButton fx:id="vICSCheck" layoutX="493.0" layoutY="87.0" mnemonicParsing="false" text="ICS" toggleGroup="$vSectionCheck" />
+      <Label layoutX="244.0" layoutY="87.0" text="Intermediate:" />
+      <Label layoutX="244.0" layoutY="60.0" text="Matric:" />
+      <TextField fx:id="vClassText" layoutX="42.0" layoutY="64.0" />
+      <Label layoutX="91.0" layoutY="14.0" prefHeight="30.0" prefWidth="51.0" text="Class" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="273.0" layoutY="138.0" mnemonicParsing="false" onAction="#onViewButton" text="View" />
+      <TableView fx:id="table" layoutX="21.0" layoutY="178.0" prefHeight="200.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="rollNoCol" prefWidth="83.33334159851074" text="Roll Number" />
+          <TableColumn fx:id="nameCol" prefWidth="80.00000762939453" text="Name" />
+            <TableColumn fx:id="contactCol" prefWidth="70.66665649414062" text="Contact" />
+            <TableColumn fx:id="classCol" prefWidth="72.66668701171875" text="Class" />
+            <TableColumn fx:id="sectionCol" prefWidth="70.6666259765625" text="Section" />
+            <TableColumn fx:id="feeCol" prefWidth="66.666748046875" text="Fee" />
+            <TableColumn fx:id="feeStatusCol" prefWidth="85.33340454101562" text="Fee Status" />
+            <TableColumn fx:id="attendanceCol" prefWidth="75.33331298828125" text="Attendance" />
+        </columns>
+      </TableView>
+      <Button layoutX="331.0" layoutY="138.0" mnemonicParsing="false" onAction="#onBackButton" text="Back" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxwalaproject.Controller">
+   <children>
+      <Label layoutX="245.0" layoutY="14.0" text="Personal Information" />
+      <Line endX="17.499990463256836" endY="379.9999694824219" layoutX="14.0" layoutY="14.0" startX="17.5000057220459" startY="-14.000004768371582" />
+      <HBox layoutX="200.0" layoutY="46.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="29.0" prefWidth="35.0" text=" Id:" />
+            <TextField fx:id="editId" />
+         </children>
+      </HBox>
+      <Button layoutX="422.0" layoutY="46.0" mnemonicParsing="false" onAction="#onSearchEdit" text="Search" />
+      <HBox layoutX="52.0" layoutY="86.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="69.0" text="Name:" />
+            <TextField fx:id="editName" prefHeight="25.0" prefWidth="148.0" />
+         </children>
+      </HBox>
+      <HBox layoutX="52.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="70.0" text="Fee Status:" />
+            <TextField fx:id="editFee" />
+         </children>
+      </HBox>
+      <HBox layoutX="316.0" layoutY="123.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="85.0" text="Attendance:" />
+            <TextField fx:id="editAttendance" />
+         </children>
+      </HBox>
+      <HBox layoutX="316.0" layoutY="86.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="25.0" prefWidth="74.0" text="Contact:" />
+            <TextField fx:id="editContact" prefHeight="25.0" prefWidth="137.0" />
+         </children>
+      </HBox>
+      <Label layoutX="279.0" layoutY="156.0" text="Courses" />
+      <HBox layoutX="72.0" layoutY="184.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb1" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt1" />
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb2" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt2" />
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="263.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb3" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt3" />
+         </children>
+      </HBox>
+      <HBox layoutX="72.0" layoutY="303.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb4" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt4" />
+         </children>
+      </HBox>
+      <HBox layoutX="348.0" layoutY="303.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb8" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt8" />
+         </children>
+      </HBox>
+      <HBox layoutX="348.0" layoutY="184.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb5" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt5" />
+         </children>
+      </HBox>
+      <HBox layoutX="348.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb6" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt6" />
+         </children>
+      </HBox>
+      <HBox layoutX="348.0" layoutY="263.0" prefHeight="25.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="lb7" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="txt7" />
+         </children>
+      </HBox>
+      <Button layoutX="261.0" layoutY="343.0" mnemonicParsing="false" onAction="#onEdit" text="Edit" />
+      <Button layoutX="316.0" layoutY="343.0" mnemonicParsing="false" onAction="#onBackButton" text="Back" />
+      <Label fx:id="editStudentLabel" layoutX="178.0" layoutY="377.0" prefHeight="17.0" prefWidth="275.0" textFill="#0ee40b" />
+   </children>
+</AnchorPane>

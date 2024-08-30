@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxwalaproject.Controller">
+    <children>
+    <TableView fx:id="viewTeacherTable" layoutY="59.0" prefHeight="301.0" prefWidth="605.0">
+        <columns>
+            <TableColumn fx:id="teacherIdCol" prefWidth="81.33337152004242" text="Teacher ID" />
+            <TableColumn fx:id="teacherNameCol" prefWidth="111.9999771118164" text="Name" />
+            <TableColumn fx:id="teacherContactCol" prefWidth="92.66661071777344" text="Contact" />
+            <TableColumn fx:id="teacherPayCol" prefWidth="90.00006103515625" text="Pay" />
+            <TableColumn fx:id="teacherCourse1Col" prefWidth="115.3333740234375" text="Course 1" />
+            <TableColumn fx:id="teacherCourse2Col" prefWidth="106.66671752929688" text="Course 2" />
+        </columns>
+    </TableView>
+   <Label layoutX="222.0" layoutY="14.0" text="Faculty Members">
+      <font>
+         <Font name="System Bold" size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="531.0" layoutY="367.0" mnemonicParsing="false" onAction="#onBackFromFacultyButton" text="Back" />
+    </children>
+</AnchorPane>
